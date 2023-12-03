@@ -426,7 +426,7 @@ body{
     }
 }
 
-@media screen and (width < 450px){
+@media screen and (width < 380px){
     .titles{
         font-size: 3vh;
     }
