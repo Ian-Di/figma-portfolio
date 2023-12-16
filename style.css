@@ -396,24 +396,16 @@ body{
 }
 
 @media screen and (width < 450px){
-    .titles{
-        font-size: 3vh;
-    }
-    
     .nav-bar{
-        padding: 20px 0px 20px 50px;
+        padding: 20px 0px 20px 0px;
     }
     
-    .in-nav{
-        gap: 14.5rem;
+    .list-nav{
+        display: none;
     }
-    
-    .menu, .logo{
-        height: 4vh;
-    }
-    
+
     .header{
-        padding: 70px 70px 200px 70px;
+        padding: 70px 50px 200px 50px;
     }
     
     .in-header{
@@ -426,6 +418,7 @@ body{
         display: flex;
         height: 200px;
         padding-top: 20px;
+        overflow: hidden;
     }
 
     .text-header{
@@ -451,19 +444,10 @@ body{
         font-size: 4vh;
     }
     
-    .habs{
-        list-style: none;
+    .skils{
         display: none;
-        gap: 20px;
     }
-    
-    .habs li{
-        border: 2px solid white;
-        border-radius: 10px;
-        padding: 3px;
-        box-shadow: -5px 5px ;
-    }
-     
+
     .img-test{
         display: none;
     }
@@ -516,7 +500,7 @@ body{
     }
 
     .contact-me{
-        padding: 100px 0px;
+        padding: 100px 0px 0px 0px ;
     }
     
     .cards-c{
