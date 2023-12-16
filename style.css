@@ -1,17 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{
-    background-color: #1a2631;
+    background-color: #000;
 }
 
 .titles{
     display: flex;
     justify-content: center;
 
-    font-family: 'Roboto', sans-serif;
     font-size: 4vh;
     color: #FFF;
 }
@@ -27,12 +27,28 @@ body{
 
 .in-nav{
     display: flex; 
-    gap: 70rem;
+    gap: 55rem;
 }
 
-.menu, .logo{
+.list-nav{
     display: flex;
-    height: 6vh;
+    gap: 20px;
+
+    align-items: center;
+}
+
+.list-nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 2.5vh;
+}
+
+.list-nav a:hover{
+    color: #FFF;
+    background-color: gray;
+    border-radius: 15px;
+    padding: 5px;
+    
 }
 
 .header{
@@ -60,41 +76,21 @@ body{
 
 .text-header h2{
     padding-top: 80px;
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 .text-header p{
     text-align: justify;
-    font-family: 'Roboto', sans-serif;
 
     font-size: 3vh;
     padding: 20px 80px 40px 0px;
 }
 
 .text-header h5{
-    font-family: 'Roboto', sans-serif;
     font-size: 4vh;
 }
 
-.habs{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
 
-.habs li{
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 3px;
-    box-shadow: -5px 5px ;
-}
-
-.habs li:hover{
-    border: 2px solid wheat;
-    border-radius: 10px;
-    padding: 3px;
-    box-shadow: -2px 1px wheat;
-}
 
 .img-test{
     display: flex;
@@ -126,13 +122,33 @@ body{
   border: 5px solid #FFF;
 }
 
+.card-sobre1{
+    display: flex;
+    width: 705px;
+
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    background-color: #FFF;
+    border-radius: 20px 0px 0px 20px;
+
+    flex-direction: column;
+    padding: 80px 0px 80px 20px;
+    margin: auto;
+    gap: 10px;
+    
+
+    list-style: none;
+    font-size: 2.6vh;
+
+}
+
 .card-sobre{
     box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    font-family: 'Roboto', sans-serif;
+
+   
     background-color: #FFF;
     border-radius: 20px;
 
-    display: flex;
     flex-direction: column;
     padding: 50px 30px;
     margin: auto;
@@ -140,13 +156,44 @@ body{
 
     list-style: none;
     font-size: 2.5vh;
+
+    display: none;
+}
+
+
+.skils h5{
+    padding-top: 25px;
+    font-size: 3vh;
+}
+
+.habs{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+
+    list-style: none;
+}
+
+.habs li{
+    background-color: #000;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: -5px 5px;
+}
+
+.habs li:hover{
+    border: 2px solid wheat;
+    padding: 3px;
+    box-shadow: -2px 1px wheat;
+    background-color: white;
 }
 
 .projetos{
     display: flex;
     justify-content: center;
 
-    padding: 100px 20px 0px 20px;
+    padding: 100px 50px 300px 50px;
     gap: 50px;
 }
 
@@ -160,7 +207,6 @@ body{
 .card-proj h5{
     color: #FFF;
     font-size: 4vh;
-    font-family: 'Roboto', sans-serif;
 
     display: flex;
     padding: 20px 0px 20px 0px;
@@ -169,7 +215,6 @@ body{
 
 .card-proj p{
     color: #FFF;
-    font-family: 'Roboto', sans-serif;
 
     display: flex;
     text-align: justify;
@@ -185,11 +230,38 @@ body{
     border: 2px solid black;
 }
 
+.contact-me{
+    display: flex;
+    color: #FFF;
+    padding: 100px;
+}
+
+.cards-c{
+    display: flex;
+    margin: auto;
+    padding: 80px 200px 80px 200px;
+
+    border: 2px solid white;
+    border-radius: 20px;
+
+    gap: 60px;
+}
+
+.card-contact img{
+    height: 85px;
+}
+
+.card-contact h3{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
 .footer{
     display: flex;
     justify-content: center;
 
-    padding: 300px 0px 50px 0px;
+    padding: 100px 0px 50px 0px;
 }
 
 .footer h3{
@@ -198,14 +270,11 @@ body{
 }
 
 
-@media screen and (width < 700px){
-    .titles{
-        font-size: 3vh;
-    }
 
+@media screen and (width < 700px){
     .nav-bar{
         display: flex;
-        padding: 20px 0px 20px 30px;
+        justify-content: center;
     }
     
     .in-nav{
@@ -213,8 +282,8 @@ body{
         gap: 30rem;
     }
     
-    .menu, .logo{
-        display: flex;
+    .list-nav{
+        display: none;
     }
 
     .header{
@@ -249,8 +318,36 @@ body{
         padding: 60px 30px 200px 30px;
     }
 
+    .card-sobre{
+        display: flex;
+    }
+
+    .card-sobre1{
+        display: none;
+    }
+
     .projetos{
         display: grid;
+        justify-content: center;
+    }
+
+    .contact-me{
+        padding: 100px 0px;
+    }
+    
+    .cards-c{
+        padding: 80px 60px 80px 60px;
+    
+        gap: 60px;
+    }
+    
+    .card-contact img{
+        height: 65px;
+    }
+    
+    .card-contact h3{
+        padding-top: 10px;
+        display: flex;
         justify-content: center;
     }
 
@@ -418,132 +515,29 @@ body{
         height: 200px;
     }
 
-    .footer{
-        display: flex;
-        justify-content: center;
-    
-        padding: 300px 0px 50px 0px;
-    }
-}
-
-@media screen and (width < 380px){
-    .titles{
-        font-size: 3vh;
+    .contact-me{
+        padding: 100px 0px;
     }
     
-    .nav-bar{
-        padding: 20px 0px 20px 50px;
-    }
+    .cards-c{
+        padding: 80px 20px 80px 20px;
     
-    .in-nav{
-        gap: 10rem;
-    }
-    
-    .menu, .logo{
-        height: 4vh;
-    }
-    
-    .header{
-        padding: 70px 20px 100px 20px;
-    }
-    
-    .in-header{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 40px;
-    }
-    
-    .img-phone img{
-        display: flex;
-        height: 200px;
-    }
-
-    .text-header{
-        display: flex;
-        flex-direction: column;
-    
-        font-size: 2vh;
-    }
-    
-    .text-header h2{
-        padding-top: 80px;
-    }
-    
-    .text-header p{
-        text-align: justify;
-    
-        font-size: 2.4vh;
-        padding: 40px 0px;
-    }
-    
-    .text-header h5{
-        display: none;
-        font-size: 4vh;
-    }
-    
-    .habs{
-        list-style: none;
-        display: none;
-        gap: 20px;
-    }
-    
-    .habs li{
-        border: 2px solid white;
-        border-radius: 10px;
-        padding: 3px;
-        box-shadow: -5px 5px ;
-    }
-     
-    .img-test{
-        display: none;
-    }
-    
-    .sobre{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
         gap: 60px;
     }
     
-    .img-sobre{
-        height: 250px;
-    }
-    
-    .projetos{
-        display: grid;
-    
-        gap: 30px;
-    }
-    
-    .card-proj{
-        border: 2px solid white;
-        border-radius: 20px;
-    
-        padding: 20px 10px;
-    }
-    
-    .card-proj h5{
-        color: #FFF;
-        font-size: 4vh;
-        font-family: 'Roboto', sans-serif;
-    
-        display: flex;
-        padding: 20px 0px 20px 0px;
-        
-    }
-    
-    .card-proj p{
-        color: #FFF;
-        font-family: 'Roboto', sans-serif;
-    
-        display: flex;
-        text-align: justify;
-    }
-    
-    .card-proj img{
+    .card-contact img{
         display: flex;
         margin: auto;
-        height: 200px;
+        height: 60px;
     }
+    
+    .card-contact h3{
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5vh;
+    }
+
 
     .footer{
         display: flex;
