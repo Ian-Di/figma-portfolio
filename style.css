@@ -356,13 +356,15 @@ html{
     }
     
     .cards-c{
-        padding: 80px 60px 80px 60px;
+        padding: 0px 0px 0px 0px;
     
-        gap: 60px;
+        gap: 6px;
     }
     
     .card-contact img{
-        height: 65px;
+        display: flex;
+        margin: auto;
+        height: 60px;
     }
     
     .card-contact h3{
@@ -412,6 +414,15 @@ html{
         display: flex;
         height: 170px;
     }
+
+    .cards-c{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px 100px 0px 100px;
+    
+        gap: 6px;
+    }
+    
 }
 
 @media screen and (width < 450px){
@@ -523,9 +534,11 @@ html{
     }
     
     .cards-c{
-        padding: 80px 20px 80px 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px 100px 0px 100px;
     
-        gap: 60px;
+        gap: 6px;
     }
     
     .card-contact img{
@@ -538,7 +551,7 @@ html{
         padding-top: 10px;
         display: flex;
         justify-content: center;
-        font-size: 1.5vh;
+        font-size: 1.8vh;
     }
 
 
