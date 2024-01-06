@@ -8,6 +8,10 @@ body{
     background-color: #000;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .titles{
     display: flex;
     justify-content: center;
@@ -20,33 +24,31 @@ body{
     display: flex;
     padding: 20px 0px 20px 50px;
 
-    
-    border-bottom: 1px solid var(--Black, #000);
-    background: var(--White, #FFF);
 }
 
 .in-nav{
     display: flex; 
-    gap: 55rem;
+    gap: 52rem;
+    color: #FFF;
 }
 
 .list-nav{
     display: flex;
-    gap: 20px;
+    gap: 30px;
 
     align-items: center;
 }
 
 .list-nav a{
-    color: black;
     text-decoration: none;
-    font-size: 2.5vh;
+    font-size: 2.6vh;
+    color: #FFF;
 }
 
 .list-nav a:hover{
-    color: #FFF;
-    background-color: gray;
-    border-radius: 15px;
+    color: rgb(85, 34, 187);
+    background-color: white;
+    border-radius: 5px;
     padding: 5px;
     
 }
@@ -74,9 +76,15 @@ body{
     font-size: 4vh;
 }
 
+.text-header .mod{
+    background-image: linear-gradient(to top, rgb(83, 50, 150), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .text-header h2{
     padding-top: 80px;
-    
 }
 
 .text-header p{
@@ -239,7 +247,7 @@ body{
 .cards-c{
     display: flex;
     margin: auto;
-    padding: 80px 200px 80px 200px;
+    
 
     border: 2px solid white;
     border-radius: 20px;
@@ -247,14 +255,26 @@ body{
     gap: 60px;
 }
 
+.card-contact{
+    padding: 60px;
+}
+
 .card-contact img{
     height: 85px;
 }
+
 
 .card-contact h3{
     padding-top: 10px;
     display: flex;
     justify-content: center;
+}
+
+.card-contact:hover{
+    background-color: #FFF;
+    background-color: rgba(255, 255, 255, 0.376);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
 }
 
 .footer{
@@ -350,7 +370,6 @@ body{
         display: flex;
         justify-content: center;
     }
-
 }
 
 @media screen and (width < 510px){
@@ -542,7 +561,7 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(116, 119, 156);
+    background-color: rgb(83, 50, 150);
     width: 6px;
     height: 6px;
     border-radius: 10px;
