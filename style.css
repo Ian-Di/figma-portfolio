@@ -54,7 +54,6 @@ html{
     
 }
 
-
 .header{
     padding: 70px 70px 300px 70px;
 }
@@ -65,10 +64,6 @@ html{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 40px;
-}
-
-.img-phone{
-    display: none;
 }
 
 .text-header{
@@ -100,16 +95,12 @@ html{
     font-size: 4vh;
 }
 
-
-
-.img-test{
+.img-test img{
     display: flex;
     height: 440px;
     background-color: white;
     border-radius: 20px;
 }
-
-
 
 .sobre{
     display: grid;
@@ -128,8 +119,8 @@ html{
 
 .img-sobre img{
     box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  border-radius: 50%;
-  border: 5px solid #FFF;
+    border-radius: 50%;
+    border: 5px solid #FFF;
 }
 
 .card-sobre1{
@@ -139,6 +130,7 @@ html{
     box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
     background-color: #FFF;
+
     border-radius: 150px 20px 150px 20px;
 
     flex-direction: column;
@@ -170,9 +162,9 @@ html{
     display: none;
 }
 
-
 .skils h5{
-    padding-top: 25px;
+    display: flex;
+    align-items: center;
     font-size: 3vh;
 }
 
@@ -193,386 +185,247 @@ html{
 }
 
 .habs li:hover{
-    border: 2px solid wheat;
+    border: 2px solid rgb(85, 34, 187);
     padding: 3px;
-    box-shadow: -2px 1px wheat;
-    background-color: white;
+    box-shadow: -2px 1px black;
 }
 
 .projetos{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
 
     padding: 100px 50px 300px 50px;
     gap: 50px;
+    color: #FFF;
 }
 
 .card-proj{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
     border: 2px solid white;
     border-radius: 20px;
-
-    padding: 40px 20px;
 }
 
 .card-proj h5{
-    color: #FFF;
-    font-size: 4vh;
-
     display: flex;
-    padding: 20px 0px 20px 0px;
-    
+    justify-content: center;
+    font-size: 4vh;
 }
 
 .card-proj p{
-    color: #FFF;
-
-    display: flex;
-    text-align: justify;
+    text-align: center;
+    padding: 10px;
 }
 
 .card-proj img{
-    display: flex;
-    margin: auto;
-    height: 200px;
+    border-radius: 20px;
 }
 
 .card-proj:hover{
-    border: 2px solid black;
+    border: 2px solid rgb(85, 34, 187);
 }
 
 .contact-me{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+
+    background-color:  rgb(85, 34, 187);
+    padding: 40px;
     color: #FFF;
-    padding: 100px;
 }
 
 .cards-c{
     display: flex;
-    margin: auto;
-    
-
-    border: 2px solid white;
-    border-radius: 20px;
-
-    gap: 60px;
+    align-items: center;
+    gap: 20px;
 }
 
 .card-contact{
-    padding: 60px;
+    display: flex;
+    align-items: center;
+
+    padding:10px;
+    gap: 20px;
+
+    border: 2px solid #FFF;
+    border-radius: 50%;
 }
 
 .card-contact img{
-    height: 85px;
-}
-
-
-.card-contact h3{
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
+    height: 45px;
 }
 
 .card-contact:hover{
     background-color: #FFF;
     background-color: rgba(255, 255, 255, 0.376);
     backdrop-filter: blur(10px);
-    border-radius: 20px;
+    border: none;
 }
 
-.footer{
-    display: flex;
-    justify-content: center;
-
-    padding: 100px 0px 50px 0px;
-}
-
-.footer h3{
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-
-@media screen and (width < 700px){
-    .nav-bar{
+@media screen and (width < 400px){
+    .titles{
         display: flex;
         justify-content: center;
-    }
-    
-    .in-nav{
-        display: flex; 
-        gap: 8rem;
-    }
-    
-    .list-nav{
-        display: flex;
-    }
+        padding: 20px;
 
-    .header{
-        padding: 50px 34px;
+        font-size: 3vh;
+        color: #FFF;
     }
     
-    .in-header{
-        gap: 50px;
-    }
-    
-    .text-header{
-        font-size: 2.0vh;
-    }
-    
-    .text-header h2{
-        padding-top: 60px;
-    }
-
-    .text-header p{
-        font-size: 2vh;
-        padding: 0px 0px 60px 0px;
-    }
-    
-    .img-test{
-        display: flex;
-        height: 260px;
-    }
-
-    .sobre{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        padding: 60px 30px 200px 30px;
-    }
-
-    .card-sobre{
-        display: flex;
-    }
-
-    .card-sobre1{
-        display: none;
-    }
-
-    .projetos{
-        display: grid;
-        justify-content: center;
-    }
-
-    .contact-me{
-        padding: 100px 0px;
-    }
-    
-    .cards-c{
-        padding: 0px 0px 0px 0px;
-    
-        gap: 6px;
-    }
-    
-    .card-contact img{
-        display: flex;
-        margin: auto;
-        height: 60px;
-    }
-    
-    .card-contact h3{
-        padding-top: 10px;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media screen and (width < 510px){
     .nav-bar{
-        display: flex;
-        padding: 20px 0px 20px 50px;
-    }
-    
-    .in-nav{
-        display: flex; 
-        gap: 3rem;
-    }
-    
-    .logo{
-        display: flex;
-        font-size: 1.4vh;
-    }
-
-    .list-nav{
-        gap: 15px;
-    }
-
-    .header{
-        padding: 70px 34px;
-    }
-    
-    .in-header{
-        gap: 50px;
-    }
-    
-    .text-header{
-        font-size: 1.9vh;
-    }
-    
-    .text-header h2{
-        padding-top: 30px;
-    }
-
-    .text-header p{
-        font-size: 2vh;
-        padding: 0px 0px 0px 0px;
-    }
-    
-    .img-test{
-        display: flex;
-        height: 170px;
-    }
-
-    .cards-c{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        padding: 0px 100px 0px 100px;
-    
-        gap: 6px;
-    }
-    
-}
-
-@media screen and (width < 450px){
-    .nav-bar{
-        padding: 20px 0px 20px 0px;
+        justify-content: center;
+        padding: 20px;
     }
     
     .list-nav{
         display: none;
     }
-
+    
     .header{
-        padding: 70px 50px 200px 50px;
+       justify-content: center;
+       padding: 100px 0px 200px 0px;
     }
     
     .in-header{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
         gap: 40px;
     }
     
-    .img-phone{
-        display: flex;
-        height: 200px;
-        padding-top: 20px;
-        overflow: hidden;
-    }
-
     .text-header{
         display: flex;
         flex-direction: column;
+        gap: 20px;
+
+        align-items: center;
+        text-align: center;
     
-        font-size: 2vh;
+        font-size: 3vh;
     }
     
     .text-header h2{
-        padding-top: 80px;
+        padding-top: 0px;
     }
     
     .text-header p{
-        text-align: justify;
-    
-        font-size: 2.4vh;
-        padding: 40px 0px;
-    }
-    
-    .text-header h5{
-        display: none;
-        font-size: 4vh;
-    }
-    
-    .skils{
-        display: none;
+        padding: 0px;
+        text-align: center;
     }
 
-    .img-test{
-        display: none;
+    .img-test img{
+        display: flex;
+        height: 240px;
+        background-color: white;
+        border-radius: 10px;
     }
-    
+
     .sobre{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        padding: 20px 0px 200px 0px;
     }
     
     .img-sobre{
-        height: 250px;
+        display: flex;
+        margin: auto;   
+        height: 240px;
+    }
+    
+    .img-sobre img{
+        box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 50%;
+        border: 5px solid #FFF;
+        
+        height: 200px;
+    }
+    
+    .card-sobre1{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        width:300px;
+
+        font-size: 2.5vh;
+        box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        background-color: #FFF;
+        border-radius: 75px 10px 75px 10px;
+    } 
+    
+    .text-sobre{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
     }
 
-    .card-sobre{
-        padding: 40px;
-        font-size: 2.5vh;
+    .skils h5{
+        padding-top: 0px;
+        font-size: 3vh;
+        
     }
+
+    .habs{
+        display: flex;
+        align-items: center;
+        
+        gap: 20px;
+        padding-top: 10px;
+    
+        list-style: none;
+    }
+    
     
     .projetos{
         display: grid;
+        grid-template-columns: repeat(1, 1fr);
     
-        gap: 30px;
+        padding: 20px 10px 200px 10px;
     }
     
-    .card-proj{
-        border: 2px solid white;
-        border-radius: 20px;
-    
-        padding: 20px 10px;
-    }
-    
-    .card-proj h5{
-        color: #FFF;
-        font-size: 4vh;
-        font-family: 'Roboto', sans-serif;
-    
-        display: flex;
-        padding: 20px 0px 20px 0px;
-        
-    }
-    
-    .card-proj p{
-        color: #FFF;
-        font-family: 'Roboto', sans-serif;
-    
-        display: flex;
-        text-align: justify;
-    }
     
     .card-proj img{
-        display: flex;
-        margin: auto;
         height: 200px;
+        border-radius: 20px;
+    }
+    
+    
+    .contact-me{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    
+        padding: 20px;
     }
 
-    .contact-me{
-        padding: 100px 0px 0px 0px ;
+    .contact-me h3{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
     }
     
     .cards-c{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        padding: 0px 100px 0px 100px;
+        display: flex;
+        justify-content: center;
+    }
     
-        gap: 6px;
+    .card-contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .card-contact img{
-        display: flex;
-        margin: auto;
-        height: 60px;
+        height: 30px;
     }
     
-    .card-contact h3{
-        padding-top: 10px;
-        display: flex;
-        justify-content: center;
-        font-size: 1.8vh;
-    }
-
-
-    .footer{
-        display: flex;
-        justify-content: center;
-    
-        padding: 300px 0px 50px 0px;
-    }
 }
 :-webkit-scrollbar-track{
     background-color: black;
