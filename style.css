@@ -142,8 +142,6 @@ html{
     font-size: 3vh;
 }
 
-
-
 .card-sobre{
     box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
@@ -226,6 +224,76 @@ html{
 
 .card-proj:hover{
     border: 2px solid rgb(85, 34, 187);
+}
+
+.preços{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 50px 30px 200px 0px;
+
+}
+
+.img-text-prçs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;
+    gap: 10px;
+}
+
+.img-text-prçs img{
+    width: 80vh;
+}
+
+.cards-prçs{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-prçs{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 40px;
+
+    height: 350px;
+    width: 300px;
+
+    background-color: #FFF;
+    border-radius: 20px;
+    border: 2px solid rgb(85, 34, 187);
+}
+
+.cards-prçs .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5vh;
+}
+
+.botton a{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+
+    color: #FFF; 
+    background-color: rgb(85, 34, 187);
+    border-radius: 5px;
+}
+
+.botton a:hover{
+    background-color:black;
+}
+
+.cards-prçs .list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(102, 101, 101);
 }
 
 .contact-me{
@@ -396,7 +464,26 @@ html{
         border-radius: 20px;
     }
     
+    .preços{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px;
+    }
     
+    .img-text-prçs{
+        text-align: center;
+    }
+    
+    .img-text-prçs img{
+        width: 50vh;
+    }
+    
+    .cards-prçs{
+        display: flex;
+        flex-direction: column;
+    }
+
     .contact-me{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -425,7 +512,6 @@ html{
     .card-contact img{
         height: 30px;
     }
-    
 }
 :-webkit-scrollbar-track{
     background-color: black;
